@@ -9,7 +9,7 @@ app.listen(3000);
 app.get('/',(req,res,next)=>{
     res.sendfile('index.html');
 });
-
+//
 app.post('/upload', function(req, res, next) {
     /* 生成multiparty对象，并配置上传目标路径 */
     var form = new multiparty.Form();
